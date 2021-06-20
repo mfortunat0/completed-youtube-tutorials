@@ -22,6 +22,7 @@ export const Nav = styled.nav`
 export const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  align-items: center;
   height: 80px;
   z-index: 1;
   width: 100%;
@@ -46,13 +47,10 @@ export const MobileIcon = styled.div`
 
   @media screen and (max-width: 768px) {
     display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
     color: #fff;
+    justify-self: flex-end;
   }
 `;
 

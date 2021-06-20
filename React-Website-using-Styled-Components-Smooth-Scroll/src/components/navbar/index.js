@@ -18,7 +18,7 @@ function NavBar() {
       <Nav>
         <NavbarContainer>
           <NavLogo to="/">Dolla</NavLogo>
-          <MobileIcon>
+          <MobileIcon id="olaolaosd">
             <FaBars />
           </MobileIcon>
           <NavMenu>
