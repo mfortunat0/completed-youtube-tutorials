@@ -10,18 +10,26 @@ import {
   SideBarMenu,
 } from "./sideBarElements";
 
-function SideBar() {
+function SideBar({ isOpen, toggle }) {
   return (
-    <SideBarContainer>
-      <Icon>
+    <SideBarContainer isOpen={isOpen} onClick={toggle}>
+      <Icon onClick={toggle}>
         <CloseIcon />
       </Icon>
       <SideBarWrapper>
         <SideBarMenu>
-          <SideBarLink to="about">About</SideBarLink>
-          <SideBarLink to="discover">Discover</SideBarLink>
-          <SideBarLink to="services">Services</SideBarLink>
-          <SideBarLink to="signup">Sign up</SideBarLink>
+          <SideBarLink onClick={toggle} to="about">
+            About
+          </SideBarLink>
+          <SideBarLink onClick={toggle} to="discover">
+            Discover
+          </SideBarLink>
+          <SideBarLink onClick={toggle} to="services">
+            Services
+          </SideBarLink>
+          <SideBarLink onClick={toggle} to="signup">
+            Sign up
+          </SideBarLink>
         </SideBarMenu>
         <SideBtnWrap>
           <SideBarRoute to="signin">Sign in</SideBarRoute>
