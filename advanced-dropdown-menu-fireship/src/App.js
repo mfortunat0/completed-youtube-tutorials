@@ -1,5 +1,5 @@
 import './App.css';
-import { useState,useRef, useEffect } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { CSSTransition } from 'react-transition-group'
 import { ReactComponent as BellIcon } from './icons/bell.svg'
 import { ReactComponent as MessengerIcon } from './icons/messenger.svg'
@@ -49,7 +49,7 @@ function DropdownMenu() {
     )
   }
   return (
-    <div className="dropdown" ref={dropdownRef} style={{height: (menuHeight + 30)}}>
+    <div className="dropdown" ref={dropdownRef} style={{ height: (menuHeight + 30) }}>
       <CSSTransition in={activeMenu === "main"}
         unmountOnExit
         timeout={500}
@@ -58,18 +58,6 @@ function DropdownMenu() {
       >
         <div className="menu">
           <DropdownItem>My profile</DropdownItem>
-          <DropdownItem
-            leftIcon={<CogIcon />}
-            rightIcon={<ChevronIcon />}
-            goToMenu="settings"
-          >
-          </DropdownItem>
-          <DropdownItem
-            leftIcon={<CogIcon />}
-            rightIcon={<ChevronIcon />}
-            goToMenu="settings"
-          >
-          </DropdownItem>
           <DropdownItem
             leftIcon={<CogIcon />}
             rightIcon={<ChevronIcon />}
