@@ -1,0 +1,5 @@
+FROM node
+RUN npm install -g @nestjs/cli
+WORKDIR /home/node/app
+USER node
+ENTRYPOINT [ "yarn","start:dev" ]
