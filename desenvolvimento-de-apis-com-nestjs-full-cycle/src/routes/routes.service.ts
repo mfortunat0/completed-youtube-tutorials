@@ -20,7 +20,7 @@ export class RoutesService {
   }
 
   findOne(id: string) {
-    return this.routeModel.findById(id).exec()
+    return this.routeModel.findById(id).exec();
   }
 
   async update(id: string, updateRouteDto: UpdateRouteDto) {
